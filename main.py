@@ -16,5 +16,4 @@ def get_data():
 
 if __name__ == "__main__":
     import uvicorn
-    # Le port attribué reste 8001
-    uvicorn.run(app, host="0.0.0.0", port=8023)
+    uvicorn.run(app, host="0.0.0.0", port=8028)
