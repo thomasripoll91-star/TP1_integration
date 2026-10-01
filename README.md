@@ -2,7 +2,7 @@
 
 Ce projet démontre la mise en place d'une pipeline d'intégration et de déploiement continus (CI/CD) entièrement automatisée pour une API Python.
 
-## Fonctionnement du pipeline
+## Fonctionnement du pipeline 
 
 À chaque `push` sur la branche `main`, le workflow GitHub Actions s'exécute avec les étapes suivantes :
 1. **Unit tests** : Exécution isolée des tests unitaires via `pytest`.
