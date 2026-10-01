@@ -80,4 +80,4 @@ jobs:
             docker stop ripollthomas || true
             docker rm ripollthomas || true
             
-            docker run -d --name ripollthomas -p 8000:8023 ${{ secrets.DOCKER_USERNAME }}/mon-app-python-cicd:latest
+            docker run -d --name ripollthomas -p 8023:8023 ${{ secrets.DOCKER_USERNAME }}/mon-app-python-cicd:latest
