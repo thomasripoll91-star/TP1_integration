@@ -22,7 +22,7 @@ jobs:
         run: pip install -r requirements.txt
         
       - name: Run unit tests
-        run: pytest tests/test_unit.py
+        run: PYTHONPATH=. pytest tests/test_unit.py
 
   e2e-tests:
     name: Run E2E Tests
@@ -40,7 +40,7 @@ jobs:
         run: pip install -r requirements.txt
         
       - name: Run E2E tests
-        run: pytest tests/test_e2e.py
+        run: PYTHONPATH=. pytest tests/test_e2e.py
 
   build-and-push:
     name: Build and Push Docker Image
